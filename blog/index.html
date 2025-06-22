@@ -511,16 +511,14 @@
     <h2 id="hom-set"><a class="toclink" href="2025/06/22/hom-set%EC%9D%B4-%EC%97%B0%EC%82%B0%EC%97%90-%EB%8B%AB%ED%98%80%EC%9E%88%EC%9D%84-%EC%A1%B0%EA%B1%B4/">Hom-set이 연산에 닫혀있을 조건</a></h2>
 <h3 id="_1"><a class="toclink" href="2025/06/22/hom-set%EC%9D%B4-%EC%97%B0%EC%82%B0%EC%97%90-%EB%8B%AB%ED%98%80%EC%9E%88%EC%9D%84-%EC%A1%B0%EA%B1%B4/#_1">관찰</a></h3>
 <p>magma <span class="arithmatex">\({ X,Y }\)</span>가 주워졌을 때 morphism <span class="arithmatex">\({ f,g:X \to Y }\)</span>에 대해서</p>
-<div class="arithmatex">\[ (fg)(xy)=f(xy)g(xy)=f(x)f(y)g(x)g(y) \]</div>
+<div class="arithmatex">\[ (fg)(x_{1}x_{2})=f(x_{1}x_{2})g(x_{1}x_{2})=f(x_{1})f(x_{2})g(x_{1})g(x_{2}) \]</div>
 <p>이고</p>
-<div class="arithmatex">\[ (fg)(x)(fg)(y)=f(x)g(x)f(y)g(y) \]</div>
-<p>이므로 <span class="arithmatex">\({ fg }\)</span>가 morphism이려면 다음 등식을 만족해야 한다.</p>
-<div class="arithmatex">\[ f(x)f(y)g(x)g(y)=f(x)g(x)f(y)g(y) \]</div>
+<div class="arithmatex">\[ (fg)(x_{1})(fg)(x_{2})=f(x_{1})g(x_{1})f(x_{2})g(x_{2}) \]</div>
+<p>이므로 <span class="arithmatex">\({ fg }\)</span>가 morphism이려면 임의의 <span class="arithmatex">\({ x_{1}, x_{2} \in X}\)</span>에 대해 다음 등식을 만족해야 한다.</p>
+<div class="arithmatex">\[ f(x_{1})f(x_{2})g(x_{1})g(x_{2})=f(x_{1})g(x_{1})f(x_{2})g(x_{2}) \]</div>
 <p>이 관계식</p>
 <div class="arithmatex">\[ (ab)(cd)=(ac)(bd) \]</div>
-<p>를 <em>mediality</em> 혹은 <em>entropicity</em>라고 부른다. 따라서 <span class="arithmatex">\({ \text{Hom}(X,Y) }\)</span>가 <span class="arithmatex">\({ Y }\)</span>의 연산에서 유도된 연산</p>
-<div class="arithmatex">\[ \forall x \in X,\quad(fg)(x)=f(x)g(x) \]</div>
-<p>에 대해서 닫혀있을 필요충분조건은 <span class="arithmatex">\({ Y }\)</span>가 medial magma인 것이다.</p>
+<p>를 <em>mediality</em> 혹은 <em>entropicity</em>라고 부른다. 따라서 <span class="arithmatex">\({ \text{Hom}(X,Y) }\)</span>가 <span class="arithmatex">\({ Y }\)</span>의 연산에서 유도된 연산에 닫혀있을 충분조건은 <span class="arithmatex">\({ Y }\)</span>가 medial magma인 것이다.</p>
 <h3 id="_2"><a class="toclink" href="2025/06/22/hom-set%EC%9D%B4-%EC%97%B0%EC%82%B0%EC%97%90-%EB%8B%AB%ED%98%80%EC%9E%88%EC%9D%84-%EC%A1%B0%EA%B1%B4/#_2">참고</a></h3>
 <ol>
 <li><a href="https://math.stackexchange.com/questions/643588/why-is-operatornamehoma-b-an-abelian-group">Why is <span class="arithmatex">\(\operatorname{Hom}(A, B)\)</span> an abelian group? - Mathematics Stack Exchange</a></li>
