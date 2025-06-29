@@ -464,6 +464,58 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-06-29 00:00:00+00:00">2025년 6월 29일</time></li>
+        
+          <li class="md-meta__item">
+            카테고리
+            
+              <a href="category/%EC%88%98%ED%95%99/" class="md-meta__link">수학</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              읽는시간 1분
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="2025/06/29/%EB%9D%BC%EA%B7%B8%EB%9E%91%EC%A3%BC-%EC%8A%B9%EC%88%98%EB%B2%95/">라그랑주 승수법</a></h2>
+<h3 id="_2"><a class="toclink" href="2025/06/29/%EB%9D%BC%EA%B7%B8%EB%9E%91%EC%A3%BC-%EC%8A%B9%EC%88%98%EB%B2%95/#_2">발견적 설명</a></h3>
+<p><span class="arithmatex">\({ f,g: X \subseteq \mathbb{R}^{n} \to \mathbb{R} }\)</span> 이고 <span class="arithmatex">\({ S = \left\{x: g(x) = 0 \right\} }\)</span>이며 <span class="arithmatex">\({ 0 }\)</span>이 <span class="arithmatex">\({ g }\)</span>의 정칙점이라고 하자, 그러면 <span class="arithmatex">\({ f }\)</span>의 <span class="arithmatex">\({ S }\)</span> 위의 제한 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>의 극값을 찾으려면 어떻게 해야할까?</p>
+<p>정칙곡선 <span class="arithmatex">\({ \alpha : (-\epsilon,\epsilon) \to S }\)</span>에 대해서,</p>
+<div class="arithmatex">\[ \left. \frac{d}{dt} \right\vert_{t=0} f(\alpha(t)) = \nabla f(\alpha(0)) \cdot \alpha'(0)\]</div>
+<p>따라서 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>가 <span class="arithmatex">\({ x \in S }\)</span>에서 극값을 가지면 <span class="arithmatex">\({ x }\)</span>에서 접하는 <span class="arithmatex">\({ S }\)</span>의 접벡터 <span class="arithmatex">\({ v }\)</span>에 대해,</p>
+<div class="arithmatex">\[ \nabla f (x) \cdot v = 0  \]</div>
+<p>한편,</p>
+<div class="arithmatex">\[ g(\alpha(t)) = c \implies \left. \frac{d}{dt} \right\rvert_{t=0} g(\alpha(t)) = \nabla g(\alpha(0)) \cdot \alpha'(0) = 0 \]</div>
+<p>따라서 <span class="arithmatex">\({ \nabla g }\)</span>는 <span class="arithmatex">\({ S }\)</span>의 임의의 접벡터 <span class="arithmatex">\({ v }\)</span>와 직교한다. 즉, <span class="arithmatex">\({ \nabla f }\)</span>와 <span class="arithmatex">\({ \nabla g }\)</span>가 평행한다는 것이고 적당한 실수 <span class="arithmatex">\({ \lambda \neq 0 }\)</span>이 존재해,</p>
+<div class="arithmatex">\[ \nabla f = \lambda \nabla g \]</div>
+<p>이때 <span class="arithmatex">\({ \lambda }\)</span>를 라그랑주 승수라고 부른다.</p>
+<p>정리하자면 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>의 극값을 찾는 것은 다음 연립방정식을 푸는 것과 같다.</p>
+<div class="arithmatex">\[ \begin{dcases} g(x) = 0 &amp; \text{(constraint euqation)} \\ \nabla f(x) - \lambda \nabla g(x) = 0 &amp; \text{(critical equation)} \end{dcases} \]</div>
+<h3 id="_3"><a class="toclink" href="2025/06/29/%EB%9D%BC%EA%B7%B8%EB%9E%91%EC%A3%BC-%EC%8A%B9%EC%88%98%EB%B2%95/#_3">라그랑지언 함수</a></h3>
+<p>주어진 두 함수 <span class="arithmatex">\({ f,g : X \subseteq \mathbb{R}^{n} \to \mathbb{R} }\)</span>에 대해, 라그랑지언 <span class="arithmatex">\({ L : X \times \mathbb{R} \to \mathbb{R} }\)</span>를 다음과 같이 정의해보자</p>
+<div class="arithmatex">\[ L(x,\lambda) = f(x) -\lambda g(x) \]</div>
+<p>그러면,</p>
+<div class="arithmatex">\[ L'(x,\lambda) = \left(\nabla f(x) - \lambda \nabla g(x),\, -g(x)\right) \]</div>
+<p>따라서 방정식</p>
+<div class="arithmatex">\[ L'(x,\lambda) = (0,0) \]</div>
+<p>은 라그랑주 승수법과 동등하다.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-06-22 00:00:00+00:00">2025년 6월 22일</time></li>
         
           <li class="md-meta__item">

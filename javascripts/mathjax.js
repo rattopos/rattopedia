@@ -1,9 +1,11 @@
 window.MathJax = {
+  loader: {load: ['[tex]/mathtools']},
   tex: {
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
-    processEnvironments: true
+    processEnvironments: true,
+    packages: {'[+]': ['mathtools']}
   },
   options: {
     ignoreHtmlClass: ".*|",
