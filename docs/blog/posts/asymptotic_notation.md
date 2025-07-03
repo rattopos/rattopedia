@@ -7,8 +7,9 @@ tags:
 categories:
   - 수학
   - 컴퓨터
+date: 2025-07-03
 ---
-# 점근 표기법
+# 점근 표기법 (asymptotic notation)
 
 ## 정의
 
@@ -30,7 +31,7 @@ $$ f(x) = O(g(x)) \text{ as } x \to x_{0} $$
 
 $$ \limsup_{x \to x_{0}} \left\lvert \frac{f(x)}{g(x)} \right\rvert < \infty $$
 
-### Big-${ \Theta }$
+### Big-Θ
 
 $$ f(x) = \Theta(g(x)) \text{ or } f(x) \asymp g(x) $$
 
@@ -46,7 +47,7 @@ $$ f(x) \sim g(x) \text{ as } x\to x_{0} $$
 
 $$ \lim_{x \to x_{0}} \frac{f(x)}{g(x)} = 1 $$
 
-### Big-${ \Omega }$
+### Big-Ω
 
 #### Hardy-Littlewood의 정의 (수론)
 
@@ -78,7 +79,7 @@ $$ g(x) = O(f(x)) $$
 
 $$ \limsup_{x \to x_{0}} \left\lvert \frac{g(x)}{f(x)} \right\rvert < \infty \iff \liminf_{x \to x_{0}} \left\lvert \frac{f(x)}{g(x)} \right\rvert  = \infty $$
 
-### Little-${ \omega }$
+### Little-ω
 
 $$ f(x) = \omega(g(x)) \text{ as } x \to x_{0} $$
 
