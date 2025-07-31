@@ -11,7 +11,7 @@ tags:
 
 ## 정의
 
-복소수 체 ${ \mathbb{C} }$ 위의 벡터공간 ${ X }$에서 정의된 linear functional ${ f : X \times X\to \mathbb{C} }$가 다음 두 조건을 만족할 때 ${ f }$는 *sesquilinear form*이라고 한다.
+복소수 체 ${ \mathbb{C} }$ 위의 벡터공간 ${ X }$에서 정의된 함수 ${ f : X \times X\to \mathbb{C} }$가 다음 두 조건을 만족할 때 ${ f }$는 *sesquilinear form*이라고 한다.
 
 임의의 두 스칼라 ${ \alpha,\beta \in \mathbb{C} }$와 임의의 세 벡터 ${ x,y,z \in X }$에 대해,
 1. (linearity) ${ f(\alpha x + \beta y,z) = \alpha f(x,z) + \beta f(y,z) }$
