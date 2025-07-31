@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://rattopos.github.com/rattopedia/blog/2025/06/29/%EB%9D%BC%EA%B7%B8%EB%9E%91%EC%A3%BC-%EC%8A%B9%EC%88%98%EB%B2%95/">
+        <link rel="canonical" href="https://rattopos.github.com/rattopedia/blog/2025/07/31/sesquilinear--linear--conjugate/">
       
       
-        <link rel="prev" href="../../22/hom-set%EC%9D%B4-%EC%97%B0%EC%82%B0%EC%97%90-%EB%8B%AB%ED%98%80%EC%9E%88%EC%9D%84-%EC%A1%B0%EA%B1%B4/">
+        <link rel="prev" href="../../03/%EC%A0%90%EA%B7%BC-%ED%91%9C%EA%B8%B0%EB%B2%95-asymptotic-notation/">
       
-      
-        <link rel="next" href="../../../07/03/%EC%A0%90%EA%B7%BC-%ED%91%9C%EA%B8%B0%EB%B2%95-asymptotic-notation/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>라그랑주 승수법 - rattopedia</title>
+        <title>sesquilinear = linear + conjugate - rattopedia</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#sesquilinear-linear-conjugate" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              라그랑주 승수법
+              sesquilinear = linear + conjugate
             
           </span>
         </div>
@@ -485,18 +483,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      발견적 설명
+      정의
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      라그랑지언 함수
+      명제
     </span>
   </a>
   
@@ -539,7 +537,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-06-29 00:00:00+00:00" class="md-ellipsis">2025년 6월 29일</time>
+                        <time datetime="2025-07-31 00:00:00+00:00" class="md-ellipsis">2025년 7월 31일</time>
                       </div>
                     </li>
                     
@@ -561,7 +559,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              읽는시간 1분
+                              읽는시간 2분
                             
                           </span>
                         </div>
@@ -588,44 +586,42 @@
       
       
       
-        <a href="../../../../../tags/#tag:미적분" class="md-tag">미적분</a>
+        <a href="../../../../../tags/#tag:선형대수" class="md-tag">선형대수</a>
       
     
       
       
       
-        <a href="../../../../../tags/#tag:최적화" class="md-tag">최적화</a>
+        <a href="../../../../../tags/#tag:함수해석" class="md-tag">함수해석</a>
       
     
   </nav>
 
 
 
-<h1 id="_1">라그랑주 승수법</h1>
-<h2 id="_2">발견적 설명</h2>
-<p><span class="arithmatex">\({ f,g: X \subseteq \mathbb{R}^{n} \to \mathbb{R} }\)</span> 이고 <span class="arithmatex">\({ S = \left\{x: g(x) = 0 \right\} }\)</span>이며 <span class="arithmatex">\({ 0 }\)</span>이 <span class="arithmatex">\({ g }\)</span>의 정칙점이라고 하자, 그러면 <span class="arithmatex">\({ f }\)</span>의 <span class="arithmatex">\({ S }\)</span> 위의 제한 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>의 극값을 찾으려면 어떻게 해야할까?</p>
-<p>정칙곡선 <span class="arithmatex">\({ \alpha : (-\epsilon,\epsilon) \to S }\)</span>에 대해서,</p>
-<div class="arithmatex">\[ \left. \frac{d}{dt} \right\vert_{t=0} f(\alpha(t)) = \nabla f(\alpha(0)) \cdot \alpha'(0)\]</div>
-<p>따라서 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>가 <span class="arithmatex">\({ x \in S }\)</span>에서 극값을 가지면 <span class="arithmatex">\({ x }\)</span>에서 접하는 <span class="arithmatex">\({ S }\)</span>의 접벡터 <span class="arithmatex">\({ v }\)</span>에 대해,</p>
-<div class="arithmatex">\[ \nabla f (x) \cdot v = 0  \]</div>
-<p>한편,</p>
-<div class="arithmatex">\[ g(\alpha(t)) = c \implies \left. \frac{d}{dt} \right\rvert_{t=0} g(\alpha(t)) = \nabla g(\alpha(0)) \cdot \alpha'(0) = 0 \]</div>
-<p>따라서 <span class="arithmatex">\({ \nabla g }\)</span>는 <span class="arithmatex">\({ S }\)</span>의 임의의 접벡터 <span class="arithmatex">\({ v }\)</span>와 직교한다. 즉, <span class="arithmatex">\({ \nabla f }\)</span>와 <span class="arithmatex">\({ \nabla g }\)</span>가 평행한다는 것이고 적당한 실수 <span class="arithmatex">\({ \lambda \neq 0 }\)</span>이 존재해,</p>
-<div class="arithmatex">\[ \nabla f = \lambda \nabla g \]</div>
-<p>이때 <span class="arithmatex">\({ \lambda }\)</span>를 라그랑주 승수라고 부른다.</p>
-<p>정리하자면 <span class="arithmatex">\({ \left. f \right\rvert_{S} }\)</span>의 극값을 찾는 것은 다음 연립방정식을 푸는 것과 같다.</p>
-<div class="arithmatex">\[ \begin{dcases}
-\nabla f(x) - \lambda \nabla g(x) = 0 &amp; \text{(critical equation)} \\
-\hfil g(x) = 0 &amp; \text{(constraint euqation)}
-\end{dcases} \]</div>
-<h2 id="_3">라그랑지언 함수</h2>
-<p>주어진 두 함수 <span class="arithmatex">\({ f,g : X \subseteq \mathbb{R}^{n} \to \mathbb{R} }\)</span>에 대해, 라그랑지언 <span class="arithmatex">\({ L : X \times \mathbb{R} \to \mathbb{R} }\)</span>를 다음과 같이 정의해보자</p>
-<div class="arithmatex">\[ L(x,\lambda) = f(x) -\lambda g(x) \]</div>
-<p>그러면,</p>
-<div class="arithmatex">\[ L'(x,\lambda) = \left(\nabla f(x) - \lambda \nabla g(x),\, -g(x)\right) \]</div>
-<p>따라서 방정식</p>
-<div class="arithmatex">\[ L'(x,\lambda) = (0,0) \]</div>
-<p>은 라그랑주 승수법과 동등하다.</p>
+<h1 id="sesquilinear-linear-conjugate">sesquilinear = linear + conjugate</h1>
+<h2 id="_1">정의</h2>
+<p>복소수 체 <span class="arithmatex">\({ \mathbb{C} }\)</span> 위의 벡터공간 <span class="arithmatex">\({ X }\)</span>에서 정의된 linear functional <span class="arithmatex">\({ f : X \times X\to \mathbb{C} }\)</span>가 다음 두 조건을 만족할 때 <span class="arithmatex">\({ f }\)</span>는 <em>sesquilinear form</em>이라고 한다.</p>
+<p>임의의 두 스칼라 <span class="arithmatex">\({ \alpha,\beta \in \mathbb{C} }\)</span>와 임의의 세 벡터 <span class="arithmatex">\({ x,y,z \in X }\)</span>에 대해,
+1. (linearity) <span class="arithmatex">\({ f(\alpha x + \beta y,z) = \alpha f(x,z) + \beta f(y,z) }\)</span>
+2. (antilinearity) <span class="arithmatex">\({ f(x,\alpha y + \beta z) = \overline{\alpha} f(x,y) + \overline{\beta}f(x,z)}\)</span></p>
+<h2 id="_2">명제</h2>
+<p><strong>Proposition</strong> 고정된 <span class="arithmatex">\({ y \in X }\)</span>에 대해 <span class="arithmatex">\({ f_{y} : X \to \mathbb{C} }\)</span>를 <span class="arithmatex">\({ f_{y}(x) = f(x,y) }\)</span>로 정의하자. 그러면,</p>
+<div class="arithmatex">\[ f\text{는 sesquilinear form} \iff (\forall y\in X)\ f_{y} \text{는 linear functional 이고 } f(y,x) = \overline{f(x,y)} \]</div>
+<p><strong>Proof)</strong> (<span class="arithmatex">\({ \implies }\)</span>) sesqulinear이므로 <span class="arithmatex">\({ f_{y} }\)</span>는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity을 이용하면,</p>
+<div class="arithmatex">\[ \begin{eqnarray}
+f(y,x) &amp; = &amp; \frac{1}{4} \left[ f(y+x,y+x) - f(y-x,y-x) \right] + \frac{i}{4}\left[ f(y+ix,y+ix) - f(y-ix,y-ix) \right] \\
+&amp; = &amp; \frac{1}{4}\left[ f(x+y,x+y)-f(x-y,x-y) \right] +\frac{i}{4}\left[f(i(x-iy),i(x-iy)) - f(i(x+iy),i(x+iy)) \right] \\
+&amp; = &amp; \frac{1}{4}\left[ f(x+y,x+y)-f(x-y,x-y) \right] -\frac{i}{4}\left[f(x+iy,x+iy)-f(x-iy,x-iy) \right] \\
+&amp; = &amp; \overline{f(x,y)}
+\end{eqnarray} \]</div>
+<p><span class="arithmatex">\({ (\impliedby) }\)</span> antilinearity만 증명하면 충분하다.</p>
+<div class="arithmatex">\[ \begin{eqnarray}
+f(x,\alpha y + \beta z) &amp; = &amp; \overline{f(\alpha y + \beta z , x)} \\
+&amp; = &amp; \overline{\alpha f(y,x) + \beta f(z,x)} \\
+&amp; = &amp; \overline{\alpha} \overline{f(y,x)} + \overline{\beta}\overline{f(z,x)} \\
+&amp; = &amp; \overline{\alpha} f(x,y) + \overline{\beta}f(x,z)
+\end{eqnarray} \]</div>
 
 
 

@@ -507,6 +507,59 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-07-31 00:00:00+00:00">2025년 7월 31일</time></li>
+        
+          <li class="md-meta__item">
+            카테고리
+            
+              <a href="./" class="md-meta__link">수학</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              읽는시간 2분
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="sesquilinear-linear-conjugate"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/">sesquilinear = linear + conjugate</a></h2>
+<h3 id="_1"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/#_1">정의</a></h3>
+<p>복소수 체 <span class="arithmatex">\({ \mathbb{C} }\)</span> 위의 벡터공간 <span class="arithmatex">\({ X }\)</span>에서 정의된 linear functional <span class="arithmatex">\({ f : X \times X\to \mathbb{C} }\)</span>가 다음 두 조건을 만족할 때 <span class="arithmatex">\({ f }\)</span>는 <em>sesquilinear form</em>이라고 한다.</p>
+<p>임의의 두 스칼라 <span class="arithmatex">\({ \alpha,\beta \in \mathbb{C} }\)</span>와 임의의 세 벡터 <span class="arithmatex">\({ x,y,z \in X }\)</span>에 대해,
+1. (linearity) <span class="arithmatex">\({ f(\alpha x + \beta y,z) = \alpha f(x,z) + \beta f(y,z) }\)</span>
+2. (antilinearity) <span class="arithmatex">\({ f(x,\alpha y + \beta z) = \overline{\alpha} f(x,y) + \overline{\beta}f(x,z)}\)</span></p>
+<h3 id="_2"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/#_2">명제</a></h3>
+<p><strong>Proposition</strong> 고정된 <span class="arithmatex">\({ y \in X }\)</span>에 대해 <span class="arithmatex">\({ f_{y} : X \to \mathbb{C} }\)</span>를 <span class="arithmatex">\({ f_{y}(x) = f(x,y) }\)</span>로 정의하자. 그러면,</p>
+<div class="arithmatex">\[ f\text{는 sesquilinear form} \iff (\forall y\in X)\ f_{y} \text{는 linear functional 이고 } f(y,x) = \overline{f(x,y)} \]</div>
+<p><strong>Proof)</strong> (<span class="arithmatex">\({ \implies }\)</span>) sesqulinear이므로 <span class="arithmatex">\({ f_{y} }\)</span>는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity을 이용하면,</p>
+<div class="arithmatex">\[ \begin{eqnarray}
+f(y,x) &amp; = &amp; \frac{1}{4} \left[ f(y+x,y+x) - f(y-x,y-x) \right] + \frac{i}{4}\left[ f(y+ix,y+ix) - f(y-ix,y-ix) \right] \\
+&amp; = &amp; \frac{1}{4}\left[ f(x+y,x+y)-f(x-y,x-y) \right] +\frac{i}{4}\left[f(i(x-iy),i(x-iy)) - f(i(x+iy),i(x+iy)) \right] \\
+&amp; = &amp; \frac{1}{4}\left[ f(x+y,x+y)-f(x-y,x-y) \right] -\frac{i}{4}\left[f(x+iy,x+iy)-f(x-iy,x-iy) \right] \\
+&amp; = &amp; \overline{f(x,y)}
+\end{eqnarray} \]</div>
+<p><span class="arithmatex">\({ (\impliedby) }\)</span> antilinearity만 증명하면 충분하다.</p>
+<div class="arithmatex">\[ \begin{eqnarray}
+f(x,\alpha y + \beta z) &amp; = &amp; \overline{f(\alpha y + \beta z , x)} \\
+&amp; = &amp; \overline{\alpha f(y,x) + \beta f(z,x)} \\
+&amp; = &amp; \overline{\alpha} \overline{f(y,x)} + \overline{\beta}\overline{f(z,x)} \\
+&amp; = &amp; \overline{\alpha} f(x,y) + \overline{\beta}f(x,z)
+\end{eqnarray} \]</div>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-07-03 00:00:00+00:00">2025년 7월 3일</time></li>
         
           <li class="md-meta__item">
