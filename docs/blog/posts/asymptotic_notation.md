@@ -2,8 +2,8 @@
 title: 점근 표기법 (asymptotic notation)
 tags:
   - 수치해석
-  - 미적분학
   - 계산복잡도
+  - 미적분
 categories:
   - 수학
   - 컴퓨터
