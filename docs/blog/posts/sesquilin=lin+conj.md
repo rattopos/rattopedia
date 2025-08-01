@@ -11,7 +11,7 @@ tags:
 
 ## 정의
 
-복소수 체 ${ \mathbb{C} }$ 위의 벡터공간 ${ X }$에서 정의된 함수 ${ f : X \times X\to \mathbb{C} }$가 다음 두 조건을 만족할 때 ${ f }$는 *sesquilinear form*이라고 한다.
+복소수체 ${ \mathbb{C} }$ 위의 벡터공간 ${ X }$에서 정의된 함수 ${ f : X \times X\to \mathbb{C} }$가 다음 두 조건을 만족할 때 ${ f }$는 *sesquilinear form*이라고 한다.
 
 임의의 두 스칼라 ${ \alpha,\beta \in \mathbb{C} }$와 임의의 세 벡터 ${ x,y,z \in X }$에 대해,
 
@@ -22,9 +22,11 @@ tags:
 
 **Proposition** 고정된 ${ y \in X }$에 대해 ${ f_{y} : X \to \mathbb{C} }$를 ${ f_{y}(x) = f(x,y) }$로 정의하자. 그러면,
 
-$$ f\text{는 sesquilinear form} \iff (\forall y\in X)\ f_{y} \text{는 linear functional 이고 } f(y,x) = \overline{f(x,y)} $$
+$$ \begin{gather}
+f\text{는 sesquilinear form} \\ \Updownarrow \\ (\forall x, y\in X)\ f_{y} \text{는 선형범함수이고 } f(y,x) = \overline{f(x,y)}
+\end{gather} $$
 
-**Proof)** (${ \implies }$) sesqulinear이므로 ${ f_{y} }$는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity을 이용하면,
+**Proof)** (${ \implies }$) sesqulinear이므로 ${ f_{y} }$는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity를 이용하면,
 
 $$ \begin{eqnarray}
 f(y,x) & = & \frac{1}{4} \left[ f(y+x,y+x) - f(y-x,y-x) \right] + \frac{i}{4}\left[ f(y+ix,y+ix) - f(y-ix,y-ix) \right] \\
