@@ -31,21 +31,21 @@ ${ \mathsf{Mat}_{k} }$는 다음과 같이 정의된다:
 
 $$ \mathsf{Vect}_{k}^{\mathrm{fd}}\underset{\operatorname{Forget}}{\overset{\operatorname{Choice}}{\rightleftarrows}} \mathsf{Vect}_{k}^{\mathrm{basis}}\underset{k^{(-)}}{\overset{\operatorname{Repr}}{\rightleftarrows}} \mathsf{Mat}_{k} $$
 
-#### 기저 선택 함자 ${ \mathsf{Choice} }$
+#### 기저 선택 함자 Choice
 
 $$ \operatorname{Choice}(V\overset{T}{\to} V') = (V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')$$
 
-#### 행렬 표현 함자 ${ \mathsf{Repr} }$
+#### 행렬 표현 함자 Repr
 
 $$ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim V' $$
 
-#### 좌표 표현 함자 ${ k^{(-)} }$
+#### 좌표 표현 함자 k<sup>(-)</sup>
 
-$$ k^{(-)}(n \overset{A}{\to}m) = (k^{n},\mathcal{E}^{n}) \overset{L_{A}}{\to} (k^{m},\mathcal{E}^{m}) $$
+$$ k^{(n \overset{A}{\to}m)} = (k^{n},\mathcal{E}^{n}) \overset{L_{A}}{\to} (k^{m},\mathcal{E}^{m}) $$
 
 여기서 ${ L_{A} }$는 좌측곱 ${ L_{A}(X) = AX }$이고 ${ \mathcal{E}^{n} }$은 ${ k^{n} }$의 표준기저.
 
-#### 망각 함자 ${ \operatorname{Forget} }$
+#### 망각 함자 Forget
 
 $$ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = V \overset{T}{\to} V' $$
 
