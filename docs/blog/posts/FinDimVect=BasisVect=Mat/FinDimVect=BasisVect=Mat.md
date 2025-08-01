@@ -17,10 +17,10 @@ tags:
 
 ${ \mathsf{Vect}^{\mathrm{fd}}_{k} }$: 체 ${ k }$ 위의 유한차원 벡터공간들의 범주
 
-${ \mathsf{Vect}^{\mathrm{basis}}_{K} }$는 다음과 같이 정의된다:
+${ \mathsf{Vect}^{\mathrm{basis}}_{k} }$는 다음과 같이 정의된다:
 
 - 오브젝트: 유한차원 벡터공간 ${ V }$와 그 기저 ${ \mathcal{B} }$의 순서쌍 ${ (V,\mathcal{B}) }$
-- ${ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( W,\mathcal{B'} \right) \right) }$: ${ V }$에서 ${ W }$으로 가는 모든 선형사상들의 모임
+- ${ \operatorname{Hom}\left(\left( V,\mathcal{B} \right),\left( W,\mathcal{B'} \right) \right) }$: ${ V }$에서 ${ W }$으로 가는 모든 선형사상들의 모임
 
 ${ \mathsf{Mat}_{k} }$는 다음과 같이 정의된다:
 
