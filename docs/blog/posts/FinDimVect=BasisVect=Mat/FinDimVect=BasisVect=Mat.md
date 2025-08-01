@@ -20,7 +20,7 @@ ${ \mathsf{Vect}^{\mathrm{fd}}_{k} }$: 체 ${ k }$ 위의 유한차원 벡터공
 ${ \mathsf{Vect}^{\mathrm{basis}}_{K} }$는 다음과 같이 정의된다:
 
 - 오브젝트: 유한차원 벡터공간 ${ V }$와 그 기저 ${ \mathcal{B} }$의 순서쌍 ${ (V,\mathcal{B}) }$
-- ${ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( V',\mathcal{B'} \right) \right) }$: ${ V }$에서 ${ V' }$으로 가는 모든 선형사상들의 모임
+- ${ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( W,\mathcal{B'} \right) \right) }$: ${ V }$에서 ${ w }$으로 가는 모든 선형사상들의 모임
 
 ${ \mathsf{Mat}_{k} }$는 다음과 같이 정의된다:
 
@@ -33,11 +33,11 @@ $$ \mathsf{Vect}_{k}^{\mathrm{fd}}\underset{\operatorname{Forget}}{\overset{\ope
 
 #### 기저 선택 함자 Choice
 
-$$ \operatorname{Choice}(V\overset{T}{\to} V') = (V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')$$
+$$ \operatorname{Choice}(V\overset{T}{\to} W) = (V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')$$
 
 #### 행렬 표현 함자 Repr
 
-$$ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim V' $$
+$$ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim W $$
 
 #### 좌표 표현 함자 k<sup>(-)</sup>
 
@@ -47,7 +47,7 @@ $$ k^{(n \overset{A}{\to}m)} = (k^{n},\mathcal{E}^{n}) \overset{L_{A}}{\to} (k^{
 
 #### 망각 함자 Forget
 
-$$ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = V \overset{T}{\to} V' $$
+$$ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')) = V \overset{T}{\to} W $$
 
 ## 명제
 
@@ -63,7 +63,7 @@ $$ \operatorname{Forget} \circ \operatorname{Choice} = \operatorname{id}_{\maths
 
 $$ \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{fd}}} \simeq \operatorname{Forget} \circ \operatorname{Choice}  $$
 
-자연동형사상 ${ \alpha: \operatorname{Choice} \circ\operatorname{Forget} \to\operatorname{id}_{\mathsf{Vect}_{k}^{{\mathrm{basis}}}}}$를 ${ \alpha_{(V,\mathcal{B})} = \operatorname{id}_{V} }$으로 잡으면,
+${ \alpha: \operatorname{Choice} \circ\operatorname{Forget} \to\operatorname{id}_{\mathsf{Vect}_{k}^{{\mathrm{basis}}}}}$를 ${ \alpha_{(V,\mathcal{B})} = \operatorname{id}_{V} }$으로 잡으면 다음 가환도식을 만족하는 자연동형사상이 된다.
 
 ![alpha|center|400](cd1.png)
 
