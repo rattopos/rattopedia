@@ -507,6 +507,84 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-08-01 00:00:00+00:00">2025년 8월 1일</time></li>
+        
+          <li class="md-meta__item">
+            카테고리
+            
+              <a href="../../category/%EC%88%98%ED%95%99/" class="md-meta__link">수학</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              읽는시간 3분
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="findimvect-basisvect-mat"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/">FinDimVect = BasisVect = Mat</a></h2>
+<p>이 문서의 내용은 <a href="../../2025/08/01/findimvect--basisvect--mat/##참고문헌">[Riehl16]</a>의 30쪽을 참고했다.</p>
+<h3 id="_1"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#_1">정의</a></h3>
+<h4 id="_2"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#_2">범주</a></h4>
+<p><span class="arithmatex">\({ \mathsf{Vect}^{\mathrm{fd}}_{k} }\)</span>: 체 <span class="arithmatex">\({ k }\)</span> 위의 유한차원 벡터공간들의 범주</p>
+<p><span class="arithmatex">\({ \mathsf{Vect}^{\mathrm{basis}}_{K} }\)</span>는 다음과 같이 정의된다:</p>
+<ul>
+<li>오브젝트: 유한차원 벡터공간 <span class="arithmatex">\({ V }\)</span>와 그 기저 <span class="arithmatex">\({ \mathcal{B} }\)</span>의 순서쌍 <span class="arithmatex">\({ (V,\mathcal{B}) }\)</span></li>
+<li><span class="arithmatex">\({ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( V',\mathcal{B'} \right) \right) }\)</span>: <span class="arithmatex">\({ V }\)</span>에서 <span class="arithmatex">\({ V' }\)</span>으로 가는 모든 선형사상들의 모임</li>
+</ul>
+<p><span class="arithmatex">\({ \mathsf{Mat}_{k} }\)</span>는 다음과 같이 정의된다:</p>
+<ul>
+<li><span class="arithmatex">\({ \operatorname{Ob}(\mathsf{Mat}_{k}) = \mathbb{N} }\)</span></li>
+<li><span class="arithmatex">\({ \operatorname{Hom}(n,m) }\)</span>: 체 <span class="arithmatex">\({ k }\)</span> 위의 모든 <span class="arithmatex">\({ m\times n }\)</span> 행렬들의 모임</li>
+</ul>
+<h4 id="_3"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#_3">함자</a></h4>
+<div class="arithmatex">\[ \mathsf{Vect}_{k}^{\mathrm{fd}}\underset{\operatorname{Forget}}{\overset{\operatorname{Choice}}{\rightleftarrows}} \mathsf{Vect}_{k}^{\mathrm{basis}}\underset{k^{(-)}}{\overset{\operatorname{Repr}}{\rightleftarrows}} \mathsf{Mat}_{k} \]</div>
+<h5 id="mathsfchoice"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#mathsfchoice">기저 선택 함자 <span class="arithmatex">\({ \mathsf{Choice} }\)</span></a></h5>
+<div class="arithmatex">\[ \operatorname{Choice}(V\overset{T}{\to} V') = (V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')\]</div>
+<h5 id="mathsfrepr"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#mathsfrepr">행렬 표현 함자 <span class="arithmatex">\({ \mathsf{Repr} }\)</span></a></h5>
+<div class="arithmatex">\[ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim V' \]</div>
+<h5 id="k-"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#k-">좌표 표현 함자 <span class="arithmatex">\({ k^{(-)} }\)</span></a></h5>
+<div class="arithmatex">\[ k^{(-)}(n \overset{A}{\to}m) = (k^{n},\mathcal{E}^{n}) \overset{L_{A}}{\to} (k^{m},\mathcal{E}^{m}) \]</div>
+<p>여기서 <span class="arithmatex">\({ L_{A} }\)</span>는 좌측곱 <span class="arithmatex">\({ L_{A}(X) = AX }\)</span>이고 <span class="arithmatex">\({ \mathcal{E}^{n} }\)</span>은 <span class="arithmatex">\({ k^{n} }\)</span>의 표준기저.</p>
+<h5 id="operatornameforget"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#operatornameforget">망각 함자 <span class="arithmatex">\({ \operatorname{Forget} }\)</span></a></h5>
+<div class="arithmatex">\[ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = V \overset{T}{\to} V' \]</div>
+<h3 id="_4"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#_4">명제</a></h3>
+<p><strong>Proposition</strong> <span class="arithmatex">\({ \mathsf{Vect}_{k}^{\mathrm{fd}} \simeq \mathsf{Vect}_{k}^{\mathrm{basis}} \simeq \mathsf{Mat}_{k} }\)</span></p>
+<p><strong>Proof)</strong> <span class="arithmatex">\({ \mathcal{A}:=\mathsf{Vect}_{k}^{\mathrm{fd}},\  \mathcal{B}:= \mathsf{Vect}_{k}^{\mathrm{basis}},\  \mathcal{C}:= \mathsf{Mat}_{k} }\)</span></p>
+<p>(1) <span class="arithmatex">\({ \mathsf{Vect}_{k}^{\mathrm{fd}} \simeq \mathsf{Vect}_{k}^{\mathrm{basis}} }\)</span></p>
+<div class="arithmatex">\[ \operatorname{Forget} \circ \operatorname{Choice} = \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{fd}}} \]</div>
+<p>이므로</p>
+<div class="arithmatex">\[ \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{fd}}} \simeq \operatorname{Forget} \circ \operatorname{Choice}  \]</div>
+<p>자연동형사상 <span class="arithmatex">\({ \alpha: \operatorname{Choice} \circ\operatorname{Forget} \to\operatorname{id}_{\mathsf{Vect}_{k}^{{\mathrm{basis}}}}}\)</span>를 <span class="arithmatex">\({ \alpha_{(V,\mathcal{B})} = \operatorname{id}_{V} }\)</span>으로 잡으면,</p>
+<p><img alt="alpha|center|400" src="../../FinDimVect%3DBasisVect%3DMat/cd1.png" /></p>
+<p>따라서,</p>
+<div class="arithmatex">\[ \operatorname{Choice} \circ \operatorname{Forget} \overset{\alpha}{\simeq} \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{basis}}}  \]</div>
+<p>(2) <span class="arithmatex">\({ \mathsf{Vect}_{k}^{\mathrm{basis}} \simeq \mathsf{Mat}_{k} }\)</span></p>
+<p><span class="arithmatex">\({\epsilon_{n} =  \operatorname{id}_{n} }\)</span>으로 두면 <span class="arithmatex">\({ \epsilon: k^{(-)} \circ \operatorname{Repr} \to \operatorname{id}_{\mathsf{Mat}_{k}} }\)</span>는 다음 가환도식을 만족하는 자연동형사상임을 확인할 수 있다.</p>
+<p><img alt="epsilon|center|400" src="../../FinDimVect%3DBasisVect%3DMat/cd2.png" /></p>
+<p><span class="arithmatex">\({ \eta_{(V,\mathcal{B)}}: (V,\mathcal{B}) \to (k^{\dim V},\mathcal{E}^{\dim V}) }\)</span>를 다음과 같이 택하자,</p>
+<div class="arithmatex">\[ \eta_{(V,\mathcal{B})}(v) = \left[ v \right]_{\mathcal{\mathcal{B}}} \]</div>
+<p>여기서 <span class="arithmatex">\({ \left[ v \right]_{\mathcal{B}} }\)</span>는 벡터 <span class="arithmatex">\({ v \in V}\)</span>의 기저 <span class="arithmatex">\({ \mathcal{B} }\)</span>에 대한 좌표 표현이다. 그러면,</p>
+<p><img alt="eta|center|400" src="../../FinDimVect%3DBasisVect%3DMat/cd3.png" /></p>
+<div class="arithmatex">\[ \left(L_{[T]_{\mathcal{B}}^{\mathcal{B}'}} \circ \eta_{(V,\mathcal{B})}\right)\left( v \right) = [T]_{\mathcal{B}}^{\mathcal{B'}} [v]_{\mathcal{B}} = [Tv]_{\mathcal{B}'} = \left( \eta_{(W,\mathcal{B}')} \circ T \right)\left( v \right) \]</div>
+<p>따라서 <span class="arithmatex">\({ \eta : \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{basis}}} \to \operatorname{Repr} \circ k^{(-)} }\)</span>는 자연동형사상이다.</p>
+<h3 id="_5"><a class="toclink" href="../../2025/08/01/findimvect--basisvect--mat/#_5">참고문헌</a></h3>
+<p>[Riehl16] <a href="https://en.wikipedia.org/wiki/Emily_Riehl" title="Emily Riehl">Riehl, Emily</a> (2016). <a href="https://books.google.com/books?id=6B9MDgAAQBAJ"><em>Category Theory in Context</em></a>. Dover. <a href="https://en.wikipedia.org/wiki/ISBN_\(identifier\)" title="ISBN (identifier)">ISBN</a> <a href="https://en.wikipedia.org/wiki/Special:BookSources/9780486809038" title="Special:BookSources/9780486809038">9780486809038</a>.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-07-31 00:00:00+00:00">2025년 7월 31일</time></li>
         
           <li class="md-meta__item">
@@ -529,7 +607,7 @@
   <div class="md-post__content md-typeset">
     <h2 id="sesquilinear-linear-conjugate"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/">sesquilinear = linear + conjugate</a></h2>
 <h3 id="_1"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/#_1">정의</a></h3>
-<p>복소수 체 <span class="arithmatex">\({ \mathbb{C} }\)</span> 위의 벡터공간 <span class="arithmatex">\({ X }\)</span>에서 정의된 함수 <span class="arithmatex">\({ f : X \times X\to \mathbb{C} }\)</span>가 다음 두 조건을 만족할 때 <span class="arithmatex">\({ f }\)</span>는 <em>sesquilinear form</em>이라고 한다.</p>
+<p>복소수체 <span class="arithmatex">\({ \mathbb{C} }\)</span> 위의 벡터공간 <span class="arithmatex">\({ X }\)</span>에서 정의된 함수 <span class="arithmatex">\({ f : X \times X\to \mathbb{C} }\)</span>가 다음 두 조건을 만족할 때 <span class="arithmatex">\({ f }\)</span>는 <em>sesquilinear form</em>이라고 한다.</p>
 <p>임의의 두 스칼라 <span class="arithmatex">\({ \alpha,\beta \in \mathbb{C} }\)</span>와 임의의 세 벡터 <span class="arithmatex">\({ x,y,z \in X }\)</span>에 대해,</p>
 <ol>
 <li>(linearity) <span class="arithmatex">\({ f(\alpha x + \beta y,z) = \alpha f(x,z) + \beta f(y,z) }\)</span></li>
@@ -537,8 +615,10 @@
 </ol>
 <h3 id="_2"><a class="toclink" href="../../2025/07/31/sesquilinear--linear--conjugate/#_2">명제</a></h3>
 <p><strong>Proposition</strong> 고정된 <span class="arithmatex">\({ y \in X }\)</span>에 대해 <span class="arithmatex">\({ f_{y} : X \to \mathbb{C} }\)</span>를 <span class="arithmatex">\({ f_{y}(x) = f(x,y) }\)</span>로 정의하자. 그러면,</p>
-<div class="arithmatex">\[ f\text{는 sesquilinear form} \iff (\forall y\in X)\ f_{y} \text{는 linear functional 이고 } f(y,x) = \overline{f(x,y)} \]</div>
-<p><strong>Proof)</strong> (<span class="arithmatex">\({ \implies }\)</span>) sesqulinear이므로 <span class="arithmatex">\({ f_{y} }\)</span>는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity을 이용하면,</p>
+<div class="arithmatex">\[ \begin{gather}
+f\text{는 sesquilinear form} \\ \Updownarrow \\ (\forall x, y\in X)\ f_{y} \text{는 선형범함수이고 } f(y,x) = \overline{f(x,y)}
+\end{gather} \]</div>
+<p><strong>Proof)</strong> (<span class="arithmatex">\({ \implies }\)</span>) sesqulinear이므로 <span class="arithmatex">\({ f_{y} }\)</span>는 linear functional. 복소켤레에 관한 성질을 증명하기 위해서 polarization identity를 이용하면,</p>
 <div class="arithmatex">\[ \begin{eqnarray}
 f(y,x) &amp; = &amp; \frac{1}{4} \left[ f(y+x,y+x) - f(y-x,y-x) \right] + \frac{i}{4}\left[ f(y+ix,y+ix) - f(y-ix,y-ix) \right] \\
 &amp; = &amp; \frac{1}{4}\left[ f(x+y,x+y)-f(x-y,x-y) \right] +\frac{i}{4}\left[f(i(x-iy),i(x-iy)) - f(i(x+iy),i(x+iy)) \right] \\
