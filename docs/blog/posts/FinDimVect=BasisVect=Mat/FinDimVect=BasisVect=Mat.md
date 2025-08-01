@@ -9,7 +9,7 @@ tags:
 ---
 # FinDimVect = BasisVect = Mat
 
-이 문서의 내용은 [\[Riehl16\]](##참고문헌)의 30쪽을 참고했다.
+이 문서의 내용은 \[Riehl16\]의 30쪽을 참고했다.
 
 ## 정의
 
@@ -53,7 +53,7 @@ $$ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = V
 
 **Proposition** ${ \mathsf{Vect}_{k}^{\mathrm{fd}} \simeq \mathsf{Vect}_{k}^{\mathrm{basis}} \simeq \mathsf{Mat}_{k} }$
 
-**Proof)** ${ \mathcal{A}:=\mathsf{Vect}_{k}^{\mathrm{fd}},\  \mathcal{B}:= \mathsf{Vect}_{k}^{\mathrm{basis}},\  \mathcal{C}:= \mathsf{Mat}_{k} }$
+**Proof)**
 
 (1) ${ \mathsf{Vect}_{k}^{\mathrm{fd}} \simeq \mathsf{Vect}_{k}^{\mathrm{basis}} }$
 
