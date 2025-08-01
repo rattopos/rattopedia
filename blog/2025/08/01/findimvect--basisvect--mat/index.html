@@ -682,7 +682,7 @@
 <p><span class="arithmatex">\({ \mathsf{Vect}^{\mathrm{basis}}_{K} }\)</span>는 다음과 같이 정의된다:</p>
 <ul>
 <li>오브젝트: 유한차원 벡터공간 <span class="arithmatex">\({ V }\)</span>와 그 기저 <span class="arithmatex">\({ \mathcal{B} }\)</span>의 순서쌍 <span class="arithmatex">\({ (V,\mathcal{B}) }\)</span></li>
-<li><span class="arithmatex">\({ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( V',\mathcal{B'} \right) \right) }\)</span>: <span class="arithmatex">\({ V }\)</span>에서 <span class="arithmatex">\({ V' }\)</span>으로 가는 모든 선형사상들의 모임</li>
+<li><span class="arithmatex">\({ \operatorname{Hom}\left( \left( V,\mathcal{B} \right),\left( W,\mathcal{B'} \right) \right) }\)</span>: <span class="arithmatex">\({ V }\)</span>에서 <span class="arithmatex">\({ w }\)</span>으로 가는 모든 선형사상들의 모임</li>
 </ul>
 <p><span class="arithmatex">\({ \mathsf{Mat}_{k} }\)</span>는 다음과 같이 정의된다:</p>
 <ul>
@@ -692,14 +692,14 @@
 <h3 id="_3">함자</h3>
 <div class="arithmatex">\[ \mathsf{Vect}_{k}^{\mathrm{fd}}\underset{\operatorname{Forget}}{\overset{\operatorname{Choice}}{\rightleftarrows}} \mathsf{Vect}_{k}^{\mathrm{basis}}\underset{k^{(-)}}{\overset{\operatorname{Repr}}{\rightleftarrows}} \mathsf{Mat}_{k} \]</div>
 <h4 id="choice">기저 선택 함자 Choice</h4>
-<div class="arithmatex">\[ \operatorname{Choice}(V\overset{T}{\to} V') = (V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')\]</div>
+<div class="arithmatex">\[ \operatorname{Choice}(V\overset{T}{\to} W) = (V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')\]</div>
 <h4 id="repr">행렬 표현 함자 Repr</h4>
-<div class="arithmatex">\[ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim V' \]</div>
+<div class="arithmatex">\[ \operatorname{Repr}((V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')) = \dim V \overset{[T]_{\mathcal{B}}^{\mathcal{B'}}}{\to} \dim W \]</div>
 <h4 id="k-">좌표 표현 함자 k<sup>(-)</sup></h4>
 <div class="arithmatex">\[ k^{(n \overset{A}{\to}m)} = (k^{n},\mathcal{E}^{n}) \overset{L_{A}}{\to} (k^{m},\mathcal{E}^{m}) \]</div>
 <p>여기서 <span class="arithmatex">\({ L_{A} }\)</span>는 좌측곱 <span class="arithmatex">\({ L_{A}(X) = AX }\)</span>이고 <span class="arithmatex">\({ \mathcal{E}^{n} }\)</span>은 <span class="arithmatex">\({ k^{n} }\)</span>의 표준기저.</p>
 <h4 id="forget">망각 함자 Forget</h4>
-<div class="arithmatex">\[ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (V',\mathcal{B}')) = V \overset{T}{\to} V' \]</div>
+<div class="arithmatex">\[ \operatorname{Forget}((V,\mathcal{B}) \overset{T}{\to} (W,\mathcal{B}')) = V \overset{T}{\to} W \]</div>
 <h2 id="_4">명제</h2>
 <p><strong>Proposition</strong> <span class="arithmatex">\({ \mathsf{Vect}_{k}^{\mathrm{fd}} \simeq \mathsf{Vect}_{k}^{\mathrm{basis}} \simeq \mathsf{Mat}_{k} }\)</span></p>
 <p><strong>Proof)</strong></p>
@@ -707,7 +707,7 @@
 <div class="arithmatex">\[ \operatorname{Forget} \circ \operatorname{Choice} = \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{fd}}} \]</div>
 <p>이므로</p>
 <div class="arithmatex">\[ \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{fd}}} \simeq \operatorname{Forget} \circ \operatorname{Choice}  \]</div>
-<p>자연동형사상 <span class="arithmatex">\({ \alpha: \operatorname{Choice} \circ\operatorname{Forget} \to\operatorname{id}_{\mathsf{Vect}_{k}^{{\mathrm{basis}}}}}\)</span>를 <span class="arithmatex">\({ \alpha_{(V,\mathcal{B})} = \operatorname{id}_{V} }\)</span>으로 잡으면,</p>
+<p><span class="arithmatex">\({ \alpha: \operatorname{Choice} \circ\operatorname{Forget} \to\operatorname{id}_{\mathsf{Vect}_{k}^{{\mathrm{basis}}}}}\)</span>를 <span class="arithmatex">\({ \alpha_{(V,\mathcal{B})} = \operatorname{id}_{V} }\)</span>으로 잡으면 다음 가환도식을 만족하는 자연동형사상이 된다.</p>
 <p><img alt="alpha|center|400" src="../../../../FinDimVect%3DBasisVect%3DMat/cd1.png" /></p>
 <p>따라서,</p>
 <div class="arithmatex">\[ \operatorname{Choice} \circ \operatorname{Forget} \overset{\alpha}{\simeq} \operatorname{id}_{\mathsf{Vect}_{k}^{\mathrm{basis}}}  \]</div>
