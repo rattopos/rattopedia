@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+auto_index = mkdocs_plugins.auto_index:AutoIndexPlugin

@@ -5,13 +5,67 @@ theme:
   language: ko
   features:
     - navigation.indexes
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    # Light mode - 학술 논문 스타일
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    # Dark mode - 학술 논문 스타일
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  font:
+    text: Noto Serif KR
+    code: Fira Code
 nav:
-  - 블로그:
-    - blog/index.md
-  - 태그: tags.md
+  - Home: index.md
+  - Posts:
+    - Posts: blog/index.md
+    - Mathematics:
+      - 점근 표기법: blog/posts/asymptotic_notation.md
+      - FinDimVect = BasisVect = Mat: blog/posts/FinDimVect=BasisVect=Mat/FinDimVect=BasisVect=Mat.md
+      - hom-set이 연산에 닫혀있을 조건: blog/posts/hom-set_closure.md
+      - 라그랑주 승수법: blog/posts/lagrange_multiplier.md
+      - sesquilinear = linear + conjugate: blog/posts/sesquilin=lin+conj.md
+    - Computer Science:
+      - 점근 표기법: blog/posts/asymptotic_notation.md
+  - Tags: tags.md
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - def_list
+  - abbr
+  - footnotes
+extra_css:
+  - stylesheets/extra.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
