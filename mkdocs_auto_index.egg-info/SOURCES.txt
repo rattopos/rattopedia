@@ -1,9 +1,0 @@
-LICENCE.docs
-setup.py
-mkdocs_auto_index.egg-info/PKG-INFO
-mkdocs_auto_index.egg-info/SOURCES.txt
-mkdocs_auto_index.egg-info/dependency_links.txt
-mkdocs_auto_index.egg-info/entry_points.txt
-mkdocs_auto_index.egg-info/top_level.txt
-mkdocs_plugins/__init__.py
-mkdocs_plugins/auto_index.py
