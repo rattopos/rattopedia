@@ -373,56 +373,14 @@
   
   .md-header__button[for="__drawer"]::after,
   .md-header__button--menu::after {
-    content: "메뉴" !important;
-    font-size: 0.7rem !important;
-    margin-left: 0.3rem !important;
-    color: #16a085 !important;
-    font-weight: 600 !important;
-    vertical-align: middle !important;
-    position: absolute !important;
-    right: -2.5rem !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    white-space: nowrap !important;
+    display: none !important;
   }
   
-  /* 메뉴 아이콘 색상 강조 */
+  /* 메뉴 아이콘 색상 강조 - 가시성 높은 진한 색상 */
   .md-header__button[for="__drawer"] .md-icon,
   .md-header__button--menu .md-icon {
-    color: #16a085 !important;
+    color: #0d6e5a !important;
     font-size: 1.2rem !important;
-  }
-  
-  /* 사이트 이름 영역 클릭 가능함을 표시 (모바일에서 사이트 이름 클릭 시 메뉴 열림) */
-  .md-header__title {
-    position: relative;
-    cursor: pointer;
-    padding-left: 2.5rem !important;
-  }
-  
-  .md-header__title::before {
-    content: "☰" !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    color: #16a085 !important;
-    font-size: 1.5rem !important;
-    font-weight: normal !important;
-    margin-right: 0.5rem !important;
-    line-height: 1 !important;
-  }
-  
-  /* 데스크톱에서는 제거 */
-  @media screen and (min-width: 60.0625em) {
-    .md-header__title::before {
-      display: none !important;
-    }
-    
-    .md-header__title {
-      padding-left: 0 !important;
-      cursor: default;
-    }
   }
 }
 
