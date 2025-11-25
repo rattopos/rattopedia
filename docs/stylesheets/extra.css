@@ -350,6 +350,38 @@
   .md-content h3 {
     font-size: 1.3em;
   }
+  
+  /* 모바일 메뉴 버튼 스타일 - 명확하게 식별 가능하도록 */
+  .md-header__button[for="__drawer"],
+  .md-header__button--menu {
+    padding: 0.5rem !important;
+    margin: 0.5rem 0.5rem 0.5rem 0.75rem !important;
+    border-radius: 4px !important;
+    background-color: rgba(22, 160, 133, 0.1) !important;
+    border: 1px solid rgba(22, 160, 133, 0.3) !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+    min-width: 2.4rem !important;
+    min-height: 2.4rem !important;
+  }
+  
+  .md-header__button[for="__drawer"]:hover,
+  .md-header__button--menu:hover {
+    background-color: rgba(22, 160, 133, 0.2) !important;
+    border-color: rgba(22, 160, 133, 0.5) !important;
+  }
+  
+  .md-header__button[for="__drawer"]::after,
+  .md-header__button--menu::after {
+    display: none !important;
+  }
+  
+  /* 메뉴 아이콘 색상 강조 - 가시성 높은 진한 색상 */
+  .md-header__button[for="__drawer"] .md-icon,
+  .md-header__button--menu .md-icon {
+    color: #0d6e5a !important;
+    font-size: 1.2rem !important;
+  }
 }
 
 /* 인쇄 스타일 */
